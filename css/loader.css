@@ -1,3 +1,10 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+/*General*/
+
 *,
 *::after,
 *::before{
@@ -20,6 +27,32 @@ body{
     align-items:flex-end;
     overflow: hidden;
 }
+
+
+/*Layer Text CSS*/
+
+#div1-1-1 {
+  z-index: 3;
+  position: absolute;
+  top: 100px;
+  margin: 20px 20px 20px 20px;
+}
+
+.title-ma{
+    color: #fff;
+    font-size: 120%;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.main-title-ma{
+/*    color: #f7c03f;*/
+    color: #fff;
+    font-size: 150%;
+    font-family: 'Abril Fatface', cursive;
+}
+
+
+/*Flower Animations*/
 
 .flower{
     position: relative;
