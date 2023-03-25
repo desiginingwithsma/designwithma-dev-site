@@ -1,594 +1,557 @@
-
 <!doctype html>
 <html class="h-100" lang="en">
-
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <meta name="description" content="The MA Studio">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-bg-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-bg-16.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-bg-32.png">
-  <meta name="author" content="The MA Studio">
-  <meta name="generator" content="Mohan Aditya Sadhanala">
-  <meta name="HandheldFriendly" content="true">
-  <title>The MA Studio</title>
-  <link rel="stylesheet" href="css/theme.min.css">
-
-   <style>
-
-/* inter-300 - latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local(''),
-       url('fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* inter-400 - latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local(''),
-       url('fonts/inter-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/inter-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local(''),
-       url('fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local(''),
-       url('fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-</style>
-
-
-  </head>
-
-  <body class="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
-
-  <!-- NAVBAR -->
-  <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5 " tabindex="0">
-
-  <div class="container">
-    <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="ma-studio.html">
-
-  <!-- SVG ICON -->
-  <svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 976.11 383.87"><defs><style>.lgcircle{fill:#001dd0;}.smcircle{fill:#f7c03f;}.ma-text{fill:#fff;}</style></defs><g id="icon-lg"><circle class="lgcircle" cx="242.25" cy="168.42" r="168.42"/><circle class="smcircle" cx="36.41" cy="347.46" r="36.41"/></g><path class="ma-text" d="M557.94,423.93h63.13l53.55,130.58h2.47l53.55-130.58h63.13V634.84H744.13V505.28h-1.75L691.71,633.5H660L609.33,504.56h-1.75V634.84H557.94Z" transform="translate(-51.95 -337.45)"/><path class="ma-text" d="M872.65,634.84H817.87L889,423.93h67.86l71.16,210.91H973.27l-13.9-44.29H886.56Zm26.06-83h48.5l-23.48-74.76h-1.65Z" transform="translate(-51.95 -337.45)"/></svg>
-
-  <!-- <svg xmlns="http://www.w3.org/2000/svg" width="40px" viewBox="0 0 20 18.69"><defs>
-    <style>.lg-circle{fill:#001dd0;}.sm-circle{fill:#f7c03f;}</style></defs>
-      <g id="icon-lg">
-        <circle class="lg-circle" cx="11.8" cy="8.2" r="8.2"/>
-        <circle class="sm-circle" cx="1.77" cy="16.92" r="1.77"/>
-      </g>
-    </svg>
-  <span class="ms-md-1 mt-1 fw-bolder me-md-5">MA</span> -->
-
-</a>
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-horizontal">
-      <li class="nav-item">
-  <a class="nav-link fs-5" href="ma-studio.html#home" aria-label="Homepage">
-    Home
-  </a>
-</li>
-<li class="nav-item">
-  <a class="nav-link fs-5" href="#portfolio" aria-label="Projects">
-    Projects
-  </a>
-</li>
-<li class="nav-item">
-  <a class="nav-link fs-5" href="public/index.html" aria-label="Blog">
-    Public
-  </a>
-</li>
-
-</ul>
-
-      <a href="get-quote.html" aria-label="Get Quote" class="btn btn-outline-light">
-        <small>Get Quote </small><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-</svg>
-      </a>
-</div>
-</nav>
-
-    <main>
-      <div class="w-100 overflow-hidden position-relative bg-black text-white" data-aos="fade" id="home">
-  <div class="position-absolute w-100 h-100 bg-black opacity-75 top-0 start-0"></div>
-  <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
-  <div class="row d-flex align-items-center justify-content-center py-vh-5">
-    <div class="col-12 col-xl-10">
-      <span class="h5 text-secondary fw-lighter">We are young minds with fresh ideas.</span>
-      <h1 class="display-huge mt-3 mb-3 lh-1">We design your brand and brand identity.</h1>
-    </div>
-    <div class="col-12 col-xl-8">
-      <p class="lead text-secondary">Here is the splendid platform for all <br>your <span style=" color: #fff;"> brand needs</span>. We design visual identity, make brand strategies, create brand elements, and provide websites for your brand!</p>
-    </div>
-    <div class="col-12 text-center">
-      <a href="#face" id="face" class="btn btn-xl btn-light">Make a fresh start
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-</svg>
-</a>
-    </div>
-  </div>
-</div>
-
-</div>
-
-<div class="w-100 position-relative bg-black text-white bg-cover d-flex align-items-center">
-  <div class="container-fluid px-vw-5">
-    <div class="position-absolute w-100 h-50 bg-dark bottom-0 start-0"></div>
-    <div class="row d-flex align-items-center position-relative justify-content-center px-0 g-5">
-      <div class="col-12 col-lg-6">
-        <img src="img/webp/wide-large-bg.jpg" width="2280" height="1732" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up">
-      </div>
-      <div class="col-12 col-md-6 col-lg-3">
-        <img src="img/webp/abstract6.webp" width="1116" height="1578" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up" data-aos-duration="2000">
-      </div>
-      <div class="col-12 col-md-6 col-lg-3">
-        <img src="img/webp/wide-icon-large.jpg" width="1116" height="848" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up" data-aos-duration="3000">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="bg-dark">
-  <div class="container px-vw-5 py-vh-5" id="services">
-    <div class="row d-flex align-items-center">
-      <div class="col-12 col-lg-7 text-lg-end" data-aos="fade-right">
-        <span class="h5 text-secondary fw-lighter">What we do</span>
-        <h2 class="display-4">Everything expressed by image and word has an <span style="color: #f7c03f"> impact </span> on the value and business. <br> We create a solid <br> and <span style="color: #f7c03f"> value-bringing </span> brand for you<span style="color: #f7c03f">.</span></h2>
-      </div>
-      <div class="col-12 col-lg-5" data-aos="fade-left">
-        <h3 class="pt-5">Brand Design & Strategy</h3>
-        <p class="text-secondary">We make your brand have a soul and have the power to attract an audience. We craft brands that grow and develop your value, not just business.<br>
-          <a href="brand-strategy.html" class="link-fancy link-fancy-light me-2">Tell me more</a>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-</svg>
-</p>
-        <h3 class="border-top border-secondary pt-5 mt-5">Identity Elements & Portfolio</h3>
-        <p class="text-secondary">Our design services include <br>visual identity, UI/UX, Websites, business cards, flyers, posters, magazine ads, annual report and more.<br>
-          <a href="brand-identity.html" class="link-fancy link-fancy-light me-2">Tell me more</a>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-</svg>
-</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bg-black py-vh-3" id="portfolio">
-  <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
-
-  <div class="row gx-5">
-    <div class="col-12 col-md-6">
-
-      <div class="card bg-transparent mb-5" data-aos="zoom-in-up">
-        <div class="bg-dark shadow rounded-5 p-0">
-          <img src="img/webp/abstract3.webp" width="582" height="327" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
-          <div class="p-5">
-            <h2 class="fw-lighter">T2 MILKSHAKES</h2>
-            <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-            <a href="content.html" class="link-fancy link-fancy-light">Read more</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card bg-transparent" data-aos="zoom-in-up">
-        <div class="bg-dark shadow rounded-5 p-0">
-          <img src="img/webp/abstract2.webp" width="582" height="442" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
-          <div class="p-5">
-            <h2 class="fw-lighter">SENSE SEMICONDUCTORS</h2>
-            <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-            <a href="content.html" class="link-fancy link-fancy-light">Read more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6" >
-      <div class="p-5 pt-0 mt-5" data-aos="fade">
-        <span class="h5 text-secondary fw-lighter">Portfolio</span>
-        <h2 class="display-4">Here are all our <span style="text-decoration: line-through; text-decoration-color: #f7c03f;"> recent </span> <span style="color: #f7c03f"> decent </span> works<span style="color: #f7c03f">.</span> </h2>
-      </div>
-
-      <div class="card bg-transparent mb-5 mt-5" data-aos="zoom-in-up">
-        <div class="bg-dark shadow rounded-5 p-0">
-          <img src="img/webp/abstract17.webp" width="582" height="390" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
-          <div class="p-5">
-            <h2 class="fw-lighter">FROZEN DELIGHTS</h2>
-            <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-            <a href="content.html" class="link-fancy link-fancy-light">Read more</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card bg-transparent" data-aos="zoom-in-up">
-        <div class="bg-dark shadow rounded-5 p-0">
-          <img src="img/webp/abstract4.webp" width="582" height="327" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
-          <div class="p-5">
-            <h2 class="fw-lighter">A LAXMI SEEDS</h2>
-            <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-            <a href="content.html" class="link-fancy link-fancy-light">Read more</a>
-          </div>
-        </div>
-      </div>
-
-
-
-    </div>
-  </div>
-
-</div>
-
-</div>
-<div class="bg-dark position-relative" id="founders">
-  <div class="container px-vw-5 py-vh-5">
-    <div class="row d-flex align-items-center">
-
-      <div class="col-12 col-lg-7">
-        <img class="img-fluid rounded-5 mb-n5 shadow" src="img/webp/person9.webp" width="512" height="512" alt="a nice person" loading="lazy" data-aos="zoom-in-right">
-        <img class="img-fluid rounded-5 ms-5 mb-n5 shadow" src="img/webp/person11.webp" width="512" height="512" alt="another nice person" loading="lazy" data-aos="zoom-in-up">
-      </div>
-      <div class="col-12 col-lg-5 bg-dark rounded-5 py-5" data-aos="fade">
-        <span class="h5 text-secondary fw-lighter">Do you like faces?</span>
-        <h2 class="display-4">We founded this <span style="color: #f7c03f"> design studio </span> <br> with❤️<br> & passion<span style="color: #f7c03f">.</span></h2>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bg-black">
-<div class="container px-vw-5 py-vh-5">
-  <div class="row d-flex align-items-center">
-    <div class="col-12 col-lg-5 text-center text-lg-end" data-aos="zoom-in-right">
-      <span class="h5 text-secondary fw-lighter">What we charge</span>
-      <h2 class="display-4">You get all your <br> <span style="color: #f7c03f">branding</span> <br> at the <br><span style="color: #f7c03f">value</span> we deliver!</h2>
-    </div>
-    <div class="col-12 col-lg-7 bg-dark rounded-5 py-vh-3 text-center my-5" data-aos="zoom-in-up">
-      <h2 class="display-huge mb-5">
-        <span class="fs-4 me-2 fw-light">$</span><span class="border-bottom border-5">VALUE</span><span class="fs-6 fw-light">/brand</span></h2>
-      <p class="lead text-secondary" style="text-align: center;">At The MA Studio, we don't charge for mere designs, we charge for the <span style="color: #fff; text-decoration: underline;">transformation</span> of your brand. Our prices reflect the <span style="color: #fff; text-decoration: underline;">value</span> we bring forth to your business. We believe that <span style="color: #f7c03f;">Your success is our success</span>, and we're here to help you stand out in a crowded market.</p>
-      <a href="#" class="btn btn-xl btn-light">Get Quote
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-</svg>
-</a>
-    </div>
-  </div>
-</div>
-
-</div>
-<div class="container-fluid px-vw-5 position-relative" data-aos="fade">
-<div class="position-absolute w-100 h-50 bg-black top-0 start-0"></div>
-<div class="position-relative py-vh-5 bg-cover bg-center rounded-5" style="background-image: url(img/webp/abstract12.webp)">
-  <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
-  <div class="row d-flex align-items-center">
-
-  <div class="col-6 d-flex align-items-center bg-dark shadow rounded-5 p-0" data-aos="zoom-in-up">
-    <div class="row d-flex justify-content-center">
-      <div class="col-12">
-    <img src="img/ceo.jpg" width="684" height="457" alt="our CEO with some nice numbers" class="img-fluid rounded-5" loading="lazy">
-  </div>
-  <div class="col-12 col-lg-10 col-xl-8 text-center my-5">
-    <p class="lead border-bottom pb-4 border-secondary" style="text-align: left;">"With a focus on strategy and design, we work collaboratively to deliver <span style="text-decoration: underline;"> impactful</span> solutions that align with your brand vision and resonate with your audience. Let's bring your brand to life."</p>
-
-    <p class="text-secondary text-center"><span style="color: #f7c03f">Mohan Aditya Sadhanala</span>, Founder.</p>
-</div>
-</div>
-</div>
-  <div class="col-5 offset-1">
-    <span class="h5 text-secondary fw-lighter">The numbers</span>
-    <br>
-    <h2 class="display-huge fw-bolder" data-aos="zoom-in-left">1Lakh</h2>
-<p class="h4 fw-lighter text-secondary">
-    <span style="color: #fff"> Our Unique Mission,</span> <br> <a href="get-quote.html" style="text-decoration: none; color: #8A8A8E"> to help businesses by designing their brands. </a>
-</p>
-
-
-    <h2 class="display-huge fw-bolder border-top border-secondary pt-5 mt-5" data-aos="zoom-in-left">12+</h2>
-<p class="h4 fw-lighter text-secondary">
-    <span style="color: #fff"> Total Esteemed Projects.</span> <br>We are just<span style="color: #fff"> 99988</span> away.<br> <a href="get-quote.html" style="text-decoration: none; color: #8A8A8E"> Wanna reduce the number? </a>
-</p>
-
-<h2 class="display-huge fw-bolder border-top border-secondary pt-5 mt-5" data-aos="zoom-in-left">5+</h2>
-<p class="h4 fw-lighter text-secondary">
-<span style="color: #fff"> Total Associations.</span> <br> <a href="get-quote.html" style="text-decoration: none; color: #8A8A8E"> Collborate with us for strategy? </a>
-</p>
-
-</div>
-  </div>
-</div>
-
-</div>
-</div>
-
-<!-- Testimonials -->
-<div class="bg-dark py-vh-5" id="testimonials">
-<div class="container px-vw-5">
-  <div class="row d-flex gx-5 align-items-center">
-    <div class="col-12 col-lg-6">
-      <div class="rounded-5 bg-black p-5 shadow" data-aos="zoom-in-right">
-        <div class="fs-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-        </div>
-
-        <!-- A Laxmi Seeds -->
-        <p class="text-secondary lead">"Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-        <div class="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
-          <img src="img/webp/person14.webp" width="96" height="96" class="rounded-circle me-3" alt="a nice person" data-aos="fade" loading="lazy">
-          <div>
-            <span class="h6 fw-5">Srinivas Ch</span><br>
-            <small class="text-secondary">Founder, A Laxmi Seeds.</small>
-          </div>
-        </div>
-      </div>
-      <div class="rounded-5 bg-black p-5 shadow mt-5" data-aos="zoom-in-right">
-        <div class="fs-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
-  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
-</svg>
-
-        </div>
-
-        <!-- Sense Semiconductors -->
-        <p class="text-secondary lead">"Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-        <div class="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
-          <img src="img/webp/person13.webp" width="96" height="96" class="rounded-circle me-3" alt="a nice person" data-aos="fade" loading="lazy">
-          <div>
-            <span class="h6 fw-5">Sudheer Reddy</span><br>
-            <small class="text-secondary">Founder, Sense Semiconductor.</small>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div class="col-12 col-lg-6" >
-      <div class="p-5 pt-0" data-aos="fade">
-        <span class="h5 text-secondary fw-lighter">Testimonials</span>
-        <h2 class="display-4">What our clients say about us.</h2>
-      </div>
-      <div class="rounded-5 bg-black p-5 shadow mt-5 gradient" data-aos="zoom-in-left">
-        <div class="fs-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>
-
-
-        </div>
-
-        <!-- Frozen Delights -->
-        <p class="lead">"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-        <div class="d-flex justify-content-start align-items-center border-top pt-3">
-          <img src="img/webp/person16.webp" width="96" height="96" class="rounded-circle me-3" alt="a nice person" data-aos="fade" loading="lazy">
-          <div>
-            <span class="h6 fw-5">Vishnu Vardhan</span><br>
-            <small>Founder, The Frozen Delights.</small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-
-    </main>
-
-  <!-- FOOTER -->
-  <footer class="bg-black border-top border-dark">
-  <div class="container py-vh-4 text-secondary fw-lighter">
-    <div class="row">
-      <div class="col-12 col-lg-5 py-4 text-center text-lg-start">
-            <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="index.html">
-  
-  <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
-    <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"/>
-    <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"/>
-  </svg> -->
-
-  <!-- SVG LOGO -->
-  <svg xmlns="http://www.w3.org/2000/svg" width="250px" viewBox="0 0 19.62 9.77"><defs><style>.cls-1{fill:#f7c03f;}.cls-2{fill:#001dd0;}</style></defs><circle class="cls-1" cx="15.61" cy="3.53" r="3.53"/><path class="cls-2" d="M8.94,5.34h3.13v.22h-.65v7.77h.65v.22H8.49v-.22h.65V6H9.09L7.33,13.55H5.86L3.8,6h0v7.37H4.4v.22H2.8v-.22h.65V5.56H2.8V5.34H6l1.56,6Z" transform="translate(-0.19 -5.11)"/><path class="cls-2" d="M16.26,13.33l-.86-2.54H13.08l-.91,2.54h.88v.22H11.26v-.22h.55l3-8.06h1l3,8.06h.54v.22H15.42v-.22Zm-2-5.87-1.11,3.08h2.13Z" transform="translate(-0.19 -5.11)"/><path class="cls-1" d="M15.28,14.09l-.1,0a.1.1,0,0,0,0,.08s0,.05,0,.07a.32.32,0,0,0,.13.07.39.39,0,0,1,.11.06.2.2,0,0,1,.08.08.23.23,0,0,1,0,.14.33.33,0,0,1,0,.14.52.52,0,0,1-.11.1.48.48,0,0,1-.18,0,.51.51,0,0,1-.17,0,.44.44,0,0,1-.15-.08l.08-.14.11.06.11,0,.11,0a.1.1,0,0,0,0-.09s0-.09-.14-.12l-.13-.07a.25.25,0,0,1-.1-.08.29.29,0,0,1,0-.14A.28.28,0,0,1,15,14a.39.39,0,0,1,.22-.08l.18,0,.13.07-.07.15A.4.4,0,0,0,15.28,14.09Z" transform="translate(-0.19 -5.11)"/><path class="cls-1" d="M16.31,13.93v.18h-.23v.77H15.9v-.77h-.23v-.18Z" transform="translate(-0.19 -5.11)"/><path class="cls-1" d="M16.69,14.61a.23.23,0,0,0,.07.07.26.26,0,0,0,.2,0,.16.16,0,0,0,.07-.07.16.16,0,0,0,0-.09v-.59h.19v.6a.28.28,0,0,1-.06.18.29.29,0,0,1-.14.13.41.41,0,0,1-.19.05.38.38,0,0,1-.19-.05.29.29,0,0,1-.14-.13.27.27,0,0,1-.05-.18v-.6h.18v.59A.16.16,0,0,0,16.69,14.61Z" transform="translate(-0.19 -5.11)"/><path class="cls-1" d="M17.47,13.93h.28a.51.51,0,0,1,.3.07.39.39,0,0,1,.18.18.6.6,0,0,1,.05.24.4.4,0,0,1-.07.24.44.44,0,0,1-.17.16.48.48,0,0,1-.24.06h-.33Zm.3.77a.34.34,0,0,0,.23-.08.27.27,0,0,0,.09-.22.35.35,0,0,0-.05-.18.31.31,0,0,0-.11-.09.25.25,0,0,0-.12,0h-.15v.59Z" transform="translate(-0.19 -5.11)"/><path class="cls-1" d="M18.65,13.93v1h-.18v-1Z" transform="translate(-0.19 -5.11)"/><path class="cls-1" d="M18.91,14.16a.58.58,0,0,1,.17-.18.53.53,0,0,1,.24-.06.54.54,0,0,1,.25.06.58.58,0,0,1,.17.18.44.44,0,0,1,.07.24.4.4,0,0,1-.07.24.42.42,0,0,1-.17.18.46.46,0,0,1-.49,0,.42.42,0,0,1-.17-.18.4.4,0,0,1-.07-.24A.44.44,0,0,1,18.91,14.16Zm.16.39a.29.29,0,0,0,.11.11.25.25,0,0,0,.3,0,.32.32,0,0,0,.1-.1.42.42,0,0,0,0-.16.37.37,0,0,0,0-.15.23.23,0,0,0-.11-.11.23.23,0,0,0-.14,0,.24.24,0,0,0-.15,0,.23.23,0,0,0-.11.11.37.37,0,0,0,0,.15A.33.33,0,0,0,19.07,14.55Z" transform="translate(-0.19 -5.11)"/><circle class="cls-2" cx="0.76" cy="7.29" r="0.76"/><path class="cls-1" d="M1,11.93v.18H.78v.77H.6v-.77H.38v-.18Z" transform="translate(-0.19 -5.11)"/><path class="cls-1" d="M2,12.88H1.81v-.39H1.38v.39H1.2v-1h.18v.38h.43v-.38H2Z" transform="translate(-0.19 -5.11)"/><path class="cls-1" d="M2.89,11.93v.18H2.43v.2h.41v.18H2.43v.21h.48v.18H2.24v-1Z" transform="translate(-0.19 -5.11)"/></svg>
-
-  <br>
-
-  <span class="ms-md-1 mt-1 fw me-md-5" style="font-size: 14px; color: #fff; ">We design your brand and brand identity.</span>
-</a>
-
-      </div>
-      <div class="col border-end border-dark">
-        <span class="h6">Company</span>
-<ul class="nav flex-column">
-  <li class="nav-item">
-    <a href="#home" class="link-fancy link-fancy-light">About us</a>
-  </li>
-  <li class="nav-item">
-    <a href="#founders" class="link-fancy link-fancy-light">CEO</a>
-  </li>
-
-  <li class="nav-item">
-    <a href="#portfolio" class="link-fancy link-fancy-light">Portfolio</a>
-  </li>
-  <li class="nav-item">
-    <a href="#" class="link-fancy link-fancy-light">Contact</a>
-  </li>
-</ul>
-      </div>
-      <div class="col border-end border-dark">
-                <span class="h6">Services</span>
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a href="#services" class="link-fancy link-fancy-light">Design</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#services" class="link-fancy link-fancy-light">Strategy</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#services" class="link-fancy link-fancy-light">Identity</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#services" class="link-fancy link-fancy-light">Elements</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#services" class="link-fancy link-fancy-light">Web Site</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#services" class="link-fancy link-fancy-light">Story</a>
-                  </li>
-                </ul>
-      </div>
-      <div class="col">
-                <span class="h6">In This Site</span>
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a href="ma-studio.html#home" class="link-fancy link-fancy-light">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#portfolio" class="link-fancy link-fancy-light">Projects</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="link-fancy link-fancy-light">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#testimonials" class="link-fancy link-fancy-light">Testimonials</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="get-quote.html" class="link-fancy link-fancy-light">Get Quote <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
-                    </a>
-                  </li>
-                </ul>
-      </div>
-    </div>
-  </div>
-  <div class="container text-center small py-vh-2 border-top border-dark">&copy The MA Studio 2023 <br> Developed with❤️by
-    <a href="#" class="link-fancy link-fancy-light" target="_blank">The MA Studio.</a>
-  </div>
-</footer>
-
-
-
-
-
-
-
-
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/aos.js"></script>
-<script>
-AOS.init({
- duration: 800, // values from 0 to 3000, with step 50ms
-});
-</script>
-<script>
-  let scrollpos = window.scrollY
-  const header = document.querySelector(".navbar")
-  const header_height = header.offsetHeight
-
-  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
-  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
-
-  window.addEventListener('scroll', function() {
-    scrollpos = window.scrollY;
-
-    if (scrollpos >= header_height) { add_class_on_scroll() }
-    else { remove_class_on_scroll() }
-
-    console.log(scrollpos)
-  })
-
-  
-</script>
-
-  </body>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+      <meta name="description" content="The MA Studio">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-bg-32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-bg-16.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-bg-32.png">
+      <meta name="author" content="The MA Studio">
+      <meta name="generator" content="Mohan Aditya Sadhanala">
+      <meta name="HandheldFriendly" content="true">
+      <title>The MA Studio</title>
+      <link rel="stylesheet" href="css/theme.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      <style>
+         /* inter-300 - latin */
+         @font-face {
+         font-family: 'Inter';
+         font-style: normal;
+         font-weight: 300;
+         font-display: swap;
+         src: local(''),
+         url('fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         }
+         /* inter-400 - latin */
+         @font-face {
+         font-family: 'Inter';
+         font-style: normal;
+         font-weight: 400;
+         font-display: swap;
+         src: local(''),
+         url('fonts/inter-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/inter-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         }
+         @font-face {
+         font-family: 'Inter';
+         font-style: normal;
+         font-weight: 500;
+         font-display: swap;
+         src: local(''),
+         url('fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         }
+         @font-face {
+         font-family: 'Inter';
+         font-style: normal;
+         font-weight: 700;
+         font-display: swap;
+         src: local(''),
+         url('fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         }
+      </style>
+   </head>
+   <body class="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
+      <!-- NAVBAR -->
+      <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5 " tabindex="0">
+         <div class="container">
+            <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="ma-studio.html">
+               <!-- SVG ICON -->
+               <svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 976.11 383.87">
+                  <defs>
+                     <style>.lgcircle{fill:#001dd0;}.smcircle{fill:#f7c03f;}.ma-text{fill:#fff;}</style>
+                  </defs>
+                  <g id="icon-lg">
+                     <circle class="lgcircle" cx="242.25" cy="168.42" r="168.42"/>
+                     <circle class="smcircle" cx="36.41" cy="347.46" r="36.41"/>
+                  </g>
+                  <path class="ma-text" d="M557.94,423.93h63.13l53.55,130.58h2.47l53.55-130.58h63.13V634.84H744.13V505.28h-1.75L691.71,633.5H660L609.33,504.56h-1.75V634.84H557.94Z" transform="translate(-51.95 -337.45)"/>
+                  <path class="ma-text" d="M872.65,634.84H817.87L889,423.93h67.86l71.16,210.91H973.27l-13.9-44.29H886.56Zm26.06-83h48.5l-23.48-74.76h-1.65Z" transform="translate(-51.95 -337.45)"/>
+               </svg>
+               <!-- <svg xmlns="http://www.w3.org/2000/svg" width="40px" viewBox="0 0 20 18.69"><defs>
+                  <style>.lg-circle{fill:#001dd0;}.sm-circle{fill:#f7c03f;}</style></defs>
+                    <g id="icon-lg">
+                      <circle class="lg-circle" cx="11.8" cy="8.2" r="8.2"/>
+                      <circle class="sm-circle" cx="1.77" cy="16.92" r="1.77"/>
+                    </g>
+                  </svg>
+                  <span class="ms-md-1 mt-1 fw-bolder me-md-5">MA</span> -->
+            </a>
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-horizontal">
+               <li class="nav-item">
+                  <a class="nav-link fs-5" href="ma-studio.html#home" aria-label="Homepage">
+                  Home
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link fs-5" href="#portfolio" aria-label="Projects">
+                  Projects
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link fs-5" href="public/index.html" aria-label="Blog">
+                  Public
+                  </a>
+               </li>
+            </ul>
+            <a href="get-quote.html" aria-label="Get Quote" class="btn btn-outline-light">
+               <small>Get Quote </small>
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+               </svg>
+            </a>
+         </div>
+      </nav>
+      <main>
+         <div class="w-100 overflow-hidden position-relative bg-black text-white" data-aos="fade" id="home">
+            <div class="position-absolute w-100 h-100 bg-black opacity-75 top-0 start-0"></div>
+            <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
+               <div class="row d-flex align-items-center justify-content-center py-vh-5">
+                  <div class="col-12 col-xl-10">
+                     <span class="h5 text-secondary fw-lighter">We are young minds with fresh ideas.</span>
+                     <h1 class="display-huge mt-3 mb-3 lh-1">We design your brand and brand identity.</h1>
+                  </div>
+                  <div class="col-12 col-xl-8">
+                     <p class="lead text-secondary">Here is the splendid platform for all <br>your <span style=" color: #fff;"> brand needs</span>. We design visual identity, make brand strategies, create brand elements, and provide websites for your brand!</p>
+                  </div>
+                  <div class="col-12 text-center">
+                     <a href="#face" id="face" class="btn btn-xl btn-light">
+                        Make a fresh start
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="w-100 position-relative bg-black text-white bg-cover d-flex align-items-center">
+            <div class="container-fluid px-vw-5">
+               <div class="position-absolute w-100 h-50 bg-dark bottom-0 start-0"></div>
+               <div class="row d-flex align-items-center position-relative justify-content-center px-0 g-5">
+                  <div class="col-12 col-lg-6">
+                     <img src="img/webp/wide-large-bg.jpg" width="2280" height="1732" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                     <img src="img/webp/abstract6.webp" width="1116" height="1578" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up" data-aos-duration="2000">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                     <img src="img/webp/wide-icon-large.jpg" width="1116" height="848" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up" data-aos-duration="3000">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- SERVICES -->
+         <div class="bg-dark">
+            <div class="container px-vw-5 py-vh-5" id="services">
+               <div class="row d-flex align-items-center">
+                  <div class="col-12 col-lg-7 text-lg-end" data-aos="fade-right">
+                     <span class="h5 text-secondary fw-lighter">What we do</span>
+                     <h2 class="display-4">Everything expressed by image and word has an <span style="color: #f7c03f"> impact </span> on the value and business. <br> We create a solid <br> and <span style="color: #f7c03f"> value-bringing </span> brand for you<span style="color: #f7c03f">.</span></h2>
+                  </div>
+                  <div class="col-12 col-lg-5" data-aos="fade-left">
+                     <h3 class="pt-5">Brand Design & Strategy</h3>
+                     <p class="text-secondary">
+                        We make your brand have a soul and have the power to attract an audience. We craft brands that grow and develop your value, not just business.<br>
+                        <a href="brand-strategy.html" class="link-fancy link-fancy-light me-2">Tell me more</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                        </svg>
+                     </p>
+                     <h3 class="border-top border-secondary pt-5 mt-5">Identity Elements & Portfolio</h3>
+                     <p class="text-secondary">
+                        Our design services include <br>visual identity, UI/UX, Websites, business cards, flyers, posters, magazine ads, annual report and more.<br>
+                        <a href="brand-identity.html" class="link-fancy link-fancy-light me-2">Tell me more</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                        </svg>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- PORTFOLIO -->
+         <div class="bg-black py-vh-3" id="portfolio">
+            <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
+               <div class="row gx-5">
+                  <div class="col-12 col-md-6">
+                     <div class="card bg-transparent mb-5" data-aos="zoom-in-up">
+                        <div class="bg-dark shadow rounded-5 p-0">
+                           <img src="img/webp/abstract3.webp" width="582" height="327" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
+                           <div class="p-5">
+                              <h2 class="fw-lighter">T2 MILKSHAKES</h2>
+                              <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                              <a href="content.html" class="link-fancy link-fancy-light">Read more</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card bg-transparent" data-aos="zoom-in-up">
+                        <div class="bg-dark shadow rounded-5 p-0">
+                           <img src="img/webp/abstract2.webp" width="582" height="442" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
+                           <div class="p-5">
+                              <h2 class="fw-lighter">SENSE SEMICONDUCTORS</h2>
+                              <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                              <a href="content.html" class="link-fancy link-fancy-light">Read more</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-6" >
+                     <div class="p-5 pt-0 mt-5" data-aos="fade">
+                        <span class="h5 text-secondary fw-lighter">Portfolio</span>
+                        <h2 class="display-4">Here are all our <span style="text-decoration: line-through; text-decoration-color: #f7c03f;"> recent </span> <span style="color: #f7c03f"> decent </span> works<span style="color: #f7c03f">.</span> </h2>
+                     </div>
+                     <div class="card bg-transparent mb-5 mt-5" data-aos="zoom-in-up">
+                        <div class="bg-dark shadow rounded-5 p-0">
+                           <img src="img/webp/abstract17.webp" width="582" height="390" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
+                           <div class="p-5">
+                              <h2 class="fw-lighter">FROZEN DELIGHTS</h2>
+                              <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                              <a href="content.html" class="link-fancy link-fancy-light">Read more</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card bg-transparent" data-aos="zoom-in-up">
+                        <div class="bg-dark shadow rounded-5 p-0">
+                           <img src="img/webp/abstract4.webp" width="582" height="327" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
+                           <div class="p-5">
+                              <h2 class="fw-lighter">A LAXMI SEEDS</h2>
+                              <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                              <a href="content.html" class="link-fancy link-fancy-light">Read more</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- FOUNDERS -->
+         <div class="bg-dark position-relative" id="founders">
+            <div class="container px-vw-5 py-vh-5">
+               <div class="row d-flex align-items-center">
+                  <div class="col-12 col-lg-7">
+                     <img class="img-fluid rounded-5 mb-n5 shadow" src="img/webp/person9.webp" width="512" height="512" alt="a nice person" loading="lazy" data-aos="zoom-in-right">
+                     <img class="img-fluid rounded-5 ms-5 mb-n5 shadow" src="img/webp/Founder2.webp" width="512" height="512" alt="another nice person" loading="lazy" data-aos="zoom-in-up">
+                  </div>
+                  <div class="col-12 col-lg-5 bg-dark rounded-5 py-5" data-aos="fade">
+                     <span class="h5 text-secondary fw-lighter">Do you like faces?</span>
+                     <h2 class="display-4">We founded this <span style="color: #f7c03f"> design studio </span> <br> with❤️<br> & passion<span style="color: #f7c03f">.</span></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="bg-black">
+            <div class="container px-vw-5 py-vh-5">
+               <div class="row d-flex align-items-center">
+                  <div class="col-12 col-lg-5 text-center text-lg-end" data-aos="zoom-in-right">
+                     <span class="h5 text-secondary fw-lighter">What we charge</span>
+                     <h2 class="display-4">You get all your <br> <span style="color: #f7c03f">branding</span> <br> at the <br><span style="color: #f7c03f">value</span> we deliver!</h2>
+                  </div>
+                  <div class="col-12 col-lg-7 bg-dark rounded-5 py-vh-3 text-center my-5" data-aos="zoom-in-up">
+                     <h2 class="display-huge mb-5">
+                        <span class="fs-4 me-2 fw-light">$</span><span class="border-bottom border-5">VALUE</span><span class="fs-6 fw-light">/brand</span>
+                     </h2>
+                     <p class="lead text-secondary" style="text-align: center;">At The MA Studio, we don't charge for mere designs, we charge for the <span style="color: #fff; text-decoration: underline;">transformation</span> of your brand. Our prices reflect the <span style="color: #fff; text-decoration: underline;">value</span> we bring forth to your business. We believe that <span style="color: #f7c03f;">Your success is our success</span>, and we're here to help you stand out in a crowded market.</p>
+                     <a href="#" class="btn btn-xl btn-light">
+                        Get Quote
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- CEO WITH NUMBERS -->
+         <div class="container-fluid px-vw-5 position-relative" data-aos="fade">
+            <div class="position-absolute w-100 h-50 bg-black top-0 start-0"></div>
+            <div class="position-relative py-vh-5 bg-cover bg-center rounded-5" style="background-image: url(img/webp/abstract12.webp)">
+               <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
+                  <div class="row d-flex align-items-center">
+                     <div class="col-6 d-flex align-items-center bg-dark shadow rounded-5 p-0" data-aos="zoom-in-up">
+                        <div class="row d-flex justify-content-center">
+                           <div class="col-12">
+                              <img src="img/webp/ceo.webp" width="684" height="457" alt="Our CEO with some nice numbers" class="img-fluid rounded-5" loading="lazy">
+                           </div>
+                           <div class="col-12 col-lg-10 col-xl-8 text-center my-5">
+                              <p class="lead border-bottom pb-4 border-secondary" style="text-align: left;">"With a focus on strategy and design, we work collaboratively to deliver <span style="text-decoration: underline;"> <abbr title="having a major impact or effect 
+                                 'an eye-catching and impactful design'" >impactful</abbr></span> solutions that align with your brand vision and resonate with your audience. Let's bring your brand to life."</p>
+                              <p class="text-secondary text-center"><span><a style="text-decoration:none; color: #f7c03f;" href="https://www.linkedin.com/in/mohan-aditya-sadhanala" target="_blank">Mohan Aditya Sadhanala</a></span>, Founder.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-5 offset-1">
+                        <span class="h5 text-secondary fw-lighter">The numbers</span>
+                        <br>
+                        <h2 class="display-huge fw-bolder" data-aos="zoom-in-left">1Lakh</h2>
+                        <p class="h4 fw-lighter text-secondary">
+                           <span style="color: #fff"> Our Unique Mission,</span> <br> <a href="get-quote.html" style="text-decoration: none; color: #8A8A8E"> to help businesses by designing their brands. </a>
+                        </p>
+                        <h2 class="display-huge fw-bolder border-top border-secondary pt-5 mt-5" data-aos="zoom-in-left">12+</h2>
+                        <p class="h4 fw-lighter text-secondary">
+                           <span style="color: #fff"> Total Esteemed Projects.</span> <br>We are just<span style="color: #fff"> 99988</span> away.<br> <a href="get-quote.html" style="text-decoration: none; color: #8A8A8E"> Wanna reduce the number? </a>
+                        </p>
+                        <h2 class="display-huge fw-bolder border-top border-secondary pt-5 mt-5" data-aos="zoom-in-left">5+</h2>
+                        <p class="h4 fw-lighter text-secondary">
+                           <span style="color: #fff"> Total Associations.</span> <br> <a href="get-quote.html" style="text-decoration: none; color: #8A8A8E"> Collborate with us for strategy? </a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- TESTIMONIALS -->
+         <div class="bg-dark py-vh-5" id="testimonials">
+            <div class="container px-vw-5">
+               <div class="row d-flex gx-5 align-items-center">
+                  <div class="col-12 col-lg-6">
+                     <div class="rounded-5 bg-black p-5 shadow" data-aos="zoom-in-right">
+                        <div class="fs-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                           </svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                           </svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                           </svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                           </svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                           </svg>
+                        </div>
+                        <!-- A Laxmi Seeds -->
+                        <p class="text-secondary lead">"Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                        <div class="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
+                           <img src="img/webp/person14.webp" width="96" height="96" class="rounded-circle me-3" alt="a nice person" data-aos="fade" loading="lazy">
+                           <div>
+                              <span class="h6 fw-5">Srinivas Ch</span><br>
+                              <small class="text-secondary">Founder, A Laxmi Seeds.</small>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="rounded-5 bg-black p-5 shadow mt-5" data-aos="zoom-in-right">
+                        <div class="fs-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                           </svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                           </svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                           </svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                           </svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                              <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                           </svg>
+                        </div>
+                        <!-- Sense Semiconductors -->
+                        <p class="text-secondary lead">"Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                        <div class="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
+                           <img src="img/webp/person13.webp" width="96" height="96" class="rounded-circle me-3" alt="a nice person" data-aos="fade" loading="lazy">
+                           <div>
+                              <span class="h6 fw-5">Sudheer Reddy</span><br>
+                              <small class="text-secondary">Founder, Sense Semiconductor.</small>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-lg-6" >
+                     <div class="p-5 pt-0" data-aos="fade">
+                        <span class="h5 text-secondary fw-lighter">Testimonials</span>
+                        <h2 class="display-4">What our clients say about us.</h2>
+                     </div>
+                     <div class="rounded-5 bg-black p-5 shadow mt-5 gradient" data-aos="zoom-in-left">
+                        <div class="fs-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                           </svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                           </svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                           </svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                           </svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                           </svg>
+                        </div>
+                        <!-- Frozen Delights -->
+                        <p class="lead">"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                        <div class="d-flex justify-content-start align-items-center border-top pt-3">
+                           <img src="img/webp/person16.webp" width="96" height="96" class="rounded-circle me-3" alt="a nice person" data-aos="fade" loading="lazy">
+                           <div>
+                              <span class="h6 fw-5">Vishnu Vardhan</span><br>
+                              <small>Founder, The Frozen Delights.</small>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- SOCIAL MEDIA -->
+            <div style="padding-top: 10vh;"> </div>
+            <div class="container col-12 mt-5 border-top border-secondary" data-aos="fade">
+               <div class="col-lg-12 d-flex" style="padding-top: 6vh;">
+                  <div class="row col-lg-6">
+                     <span class="h5 text-secondary fw-lighter">Are you online?</span>
+                     <h2 class="display-4">Explore us on</h2>
+                     <br>
+                     <h2 class="display-4">Social Media!</h2>
+                  </div>
+                  <div class="col-lg-8 mx-auto mt-5" id="socialmedia">
+                     <a href="https://www.facebook.com/themastudio1" target="_blank" id="facebook"><i class="ri-facebook-fill ri-3x"></i></a>
+                     <a href="https://twitter.com/mastudi_o" target="_blank" id="twitter"><i class="ri-twitter-fill ri-3x"></i></a>
+                     <a href="https://www.instagram.com/mastudi.o/" target="_blank" id="instagram"><i class="ri-instagram-fill ri-3x"></i></a>
+                     <a href="https://www.linkedin.com/company/the-ma-studio/"target="_blank"  id="linkedin"><i class="ri-linkedin-fill ri-3x"></i></a>
+                     <a href="https://www.behance.net/themastudio" target="_blank" id="behance"><i class="ri-behance-fill ri-3x"></i></a>
+                     <a href="https://dribbble.com/themastudio" target="_blank" id="dribbble"><i class="ri-dribbble-fill ri-3x"></i></a>
+                     <a href="https://www.youtube.com/@mastudi.o" target="_blank" id="youtube"><i class="ri-youtube-fill ri-3x"></i></a>
+                     <a href="https://in.pinterest.com/themastudio1/" target="_blank" id="pinterest"><i class="ri-pinterest-fill ri-3x"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <!-- FOOTER -->
+      <footer class="bg-black border-top border-dark">
+         <div class="container py-vh-4 text-secondary fw-lighter">
+            <div class="row">
+               <div class="col-12 col-lg-5 py-4 text-center text-lg-start">
+                  <!-- SVG LOGO -->
+                  <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="index.html">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="250px" viewBox="0 0 19.62 9.77">
+                        <defs>
+                           <style>.cls-1{fill:#f7c03f;}.cls-2{fill:#001dd0;}</style>
+                        </defs>
+                        <circle class="cls-1" cx="15.61" cy="3.53" r="3.53"/>
+                        <path class="cls-2" d="M8.94,5.34h3.13v.22h-.65v7.77h.65v.22H8.49v-.22h.65V6H9.09L7.33,13.55H5.86L3.8,6h0v7.37H4.4v.22H2.8v-.22h.65V5.56H2.8V5.34H6l1.56,6Z" transform="translate(-0.19 -5.11)"/>
+                        <path class="cls-2" d="M16.26,13.33l-.86-2.54H13.08l-.91,2.54h.88v.22H11.26v-.22h.55l3-8.06h1l3,8.06h.54v.22H15.42v-.22Zm-2-5.87-1.11,3.08h2.13Z" transform="translate(-0.19 -5.11)"/>
+                        <path class="cls-1" d="M15.28,14.09l-.1,0a.1.1,0,0,0,0,.08s0,.05,0,.07a.32.32,0,0,0,.13.07.39.39,0,0,1,.11.06.2.2,0,0,1,.08.08.23.23,0,0,1,0,.14.33.33,0,0,1,0,.14.52.52,0,0,1-.11.1.48.48,0,0,1-.18,0,.51.51,0,0,1-.17,0,.44.44,0,0,1-.15-.08l.08-.14.11.06.11,0,.11,0a.1.1,0,0,0,0-.09s0-.09-.14-.12l-.13-.07a.25.25,0,0,1-.1-.08.29.29,0,0,1,0-.14A.28.28,0,0,1,15,14a.39.39,0,0,1,.22-.08l.18,0,.13.07-.07.15A.4.4,0,0,0,15.28,14.09Z" transform="translate(-0.19 -5.11)"/>
+                        <path class="cls-1" d="M16.31,13.93v.18h-.23v.77H15.9v-.77h-.23v-.18Z" transform="translate(-0.19 -5.11)"/>
+                        <path class="cls-1" d="M16.69,14.61a.23.23,0,0,0,.07.07.26.26,0,0,0,.2,0,.16.16,0,0,0,.07-.07.16.16,0,0,0,0-.09v-.59h.19v.6a.28.28,0,0,1-.06.18.29.29,0,0,1-.14.13.41.41,0,0,1-.19.05.38.38,0,0,1-.19-.05.29.29,0,0,1-.14-.13.27.27,0,0,1-.05-.18v-.6h.18v.59A.16.16,0,0,0,16.69,14.61Z" transform="translate(-0.19 -5.11)"/>
+                        <path class="cls-1" d="M17.47,13.93h.28a.51.51,0,0,1,.3.07.39.39,0,0,1,.18.18.6.6,0,0,1,.05.24.4.4,0,0,1-.07.24.44.44,0,0,1-.17.16.48.48,0,0,1-.24.06h-.33Zm.3.77a.34.34,0,0,0,.23-.08.27.27,0,0,0,.09-.22.35.35,0,0,0-.05-.18.31.31,0,0,0-.11-.09.25.25,0,0,0-.12,0h-.15v.59Z" transform="translate(-0.19 -5.11)"/>
+                        <path class="cls-1" d="M18.65,13.93v1h-.18v-1Z" transform="translate(-0.19 -5.11)"/>
+                        <path class="cls-1" d="M18.91,14.16a.58.58,0,0,1,.17-.18.53.53,0,0,1,.24-.06.54.54,0,0,1,.25.06.58.58,0,0,1,.17.18.44.44,0,0,1,.07.24.4.4,0,0,1-.07.24.42.42,0,0,1-.17.18.46.46,0,0,1-.49,0,.42.42,0,0,1-.17-.18.4.4,0,0,1-.07-.24A.44.44,0,0,1,18.91,14.16Zm.16.39a.29.29,0,0,0,.11.11.25.25,0,0,0,.3,0,.32.32,0,0,0,.1-.1.42.42,0,0,0,0-.16.37.37,0,0,0,0-.15.23.23,0,0,0-.11-.11.23.23,0,0,0-.14,0,.24.24,0,0,0-.15,0,.23.23,0,0,0-.11.11.37.37,0,0,0,0,.15A.33.33,0,0,0,19.07,14.55Z" transform="translate(-0.19 -5.11)"/>
+                        <circle class="cls-2" cx="0.76" cy="7.29" r="0.76"/>
+                        <path class="cls-1" d="M1,11.93v.18H.78v.77H.6v-.77H.38v-.18Z" transform="translate(-0.19 -5.11)"/>
+                        <path class="cls-1" d="M2,12.88H1.81v-.39H1.38v.39H1.2v-1h.18v.38h.43v-.38H2Z" transform="translate(-0.19 -5.11)"/>
+                        <path class="cls-1" d="M2.89,11.93v.18H2.43v.2h.41v.18H2.43v.21h.48v.18H2.24v-1Z" transform="translate(-0.19 -5.11)"/>
+                     </svg>
+                     <br>
+                     <span class="ms-md-1 mt-1 fw me-md-5" style="font-size: 14px; color: #fff; ">We design your brand and brand identity.</span>
+                  </a>
+               </div>
+               <div class="col border-end border-dark">
+                  <span class="h6">Company</span>
+                  <ul class="nav flex-column">
+                     <li class="nav-item">
+                        <a href="#home" class="link-fancy link-fancy-light">About us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#founders" class="link-fancy link-fancy-light">CEO</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#portfolio" class="link-fancy link-fancy-light">Portfolio</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#" class="link-fancy link-fancy-light">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col border-end border-dark">
+                  <span class="h6">Services</span>
+                  <ul class="nav flex-column">
+                     <li class="nav-item">
+                        <a href="#services" class="link-fancy link-fancy-light">Design</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#services" class="link-fancy link-fancy-light">Strategy</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#services" class="link-fancy link-fancy-light">Identity</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#services" class="link-fancy link-fancy-light">Elements</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#services" class="link-fancy link-fancy-light">Web Site</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#services" class="link-fancy link-fancy-light">Story</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col">
+                  <span class="h6">In This Site</span>
+                  <ul class="nav flex-column">
+                     <li class="nav-item">
+                        <a href="ma-studio.html#home" class="link-fancy link-fancy-light">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#portfolio" class="link-fancy link-fancy-light">Projects</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#" class="link-fancy link-fancy-light">The Public</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#testimonials" class="link-fancy link-fancy-light">Testimonials</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="get-quote.html" class="link-fancy link-fancy-light">
+                           Get Quote 
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                           </svg>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- COPYRIGHT CONTENT -->
+         <div class="container text-center small py-vh-2 border-top border-dark">&copy The MA Studio 2023 <br> Developed with❤️by
+            <a href="#" class="link-fancy link-fancy-light" target="_blank">The MA Studio.</a>
+         </div>
+      </footer>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script>
+         AOS.init({
+          duration: 800, // values from 0 to 3000, with step 50ms
+         });
+      </script>
+      <script>
+         let scrollpos = window.scrollY
+         const header = document.querySelector(".navbar")
+         const header_height = header.offsetHeight
+         
+         const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+         const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+         
+         window.addEventListener('scroll', function() {
+           scrollpos = window.scrollY;
+         
+           if (scrollpos >= header_height) { add_class_on_scroll() }
+           else { remove_class_on_scroll() }
+         
+           console.log(scrollpos)
+         })
+         
+         
+      </script>
+   </body>
 </html>
